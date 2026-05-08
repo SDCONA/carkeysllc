@@ -80,7 +80,7 @@ export default function Test() {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'bg-slate-900/80 backdrop-blur-xl border-b border-white/10 shadow-2xl' : 'bg-transparent'
       }`}>
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto p-[16px]">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center shadow-lg shadow-blue-500/50 transform hover:scale-110 transition-transform">
@@ -104,7 +104,7 @@ export default function Test() {
       </header>
 
       {/* Hero Section with Banner */}
-      <section className="relative pt-32 pb-20 px-4">
+      <section className="relative px-[16px] pt-[128px] pb-[10px]">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-orange-400 mb-6 shadow-xl">
@@ -120,7 +120,7 @@ export default function Test() {
               </span>
             </h1>
 
-            <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">Expert automotive programming and locksmith services for all car makes and models. ECU, TCM, BCM programming, ADAS calibration.</p>
+            <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">Expert automotive programming and locksmith services for all car makes and models. ECU, TCM, BCM programming, ADAS Radar calibration.</p>
           </div>
 
           {/* Banner Image */}
@@ -166,19 +166,9 @@ export default function Test() {
       </section>
 
       {/* Services Section */}
-      <section className="relative py-20 px-4">
+      <section className="relative px-[16px] py-[10px]">
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-blue-400 mb-4">
-              Professional Services
-            </div>
-            <h2 className="text-4xl md:text-5xl text-white mb-4">
-              Complete <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">Automotive Solutions</span>
-            </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              Advanced programming and restoration services for all vehicle systems
-            </p>
-          </div>
+          
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {services.map((service, index) => (
